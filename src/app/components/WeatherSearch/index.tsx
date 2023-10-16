@@ -13,7 +13,6 @@ export default function WeatherSearch() {
 
   const searchHandler = (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log(cityName);
     if (cityName.length > 0) {
       dispatch(fetchDataRequest(cityName));
       dispatch(fetchData(cityName));
